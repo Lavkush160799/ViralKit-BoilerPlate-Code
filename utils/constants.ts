@@ -1,8 +1,8 @@
 // Wiro API Configuration
 export const WIRO_CONFIG = {
-  API_KEY: "9uif4gcrwqru5gxuaeuk2e64g768vbjx",
+  API_KEY: "",
   API_SECRET:
-    "89cf96f2fd650f82157c4057caba1154f100e89d0aa2672b9f99991bdf323c280ff7a967d2181fff9ad9df1a9f5e4ecf",
+    "",
   BASE_URL: "https://api.wiro.ai/v1",
 };
 
