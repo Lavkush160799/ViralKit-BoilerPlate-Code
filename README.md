@@ -1,4 +1,4 @@
-# ViralKit - AI Content Studio
+# Video generator 
 
 A complete React Native mobile app for creating social media content packages using Wiro AI APIs. Generate styled product photoshoots, promotional videos, and engaging captions - all from a single product image!
 
@@ -28,7 +28,7 @@ A complete React Native mobile app for creating social media content packages us
 ## Project Structure
 
 ```
-viralkit/
+Video generator/
 ├── app/                    # Expo Router screens
 │   ├── (tabs)/
 │   │   ├── index.tsx      # Home - Upload & Generate
@@ -67,7 +67,7 @@ viralkit/
 
 1. Clone the repository:
 ```bash
-cd viralkit
+cd Video generator
 ```
 
 2. Install dependencies:
