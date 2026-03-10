@@ -1,10 +1,13 @@
-import { Text, View } from "react-native";
+import { StatusBar, Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const HomeScreen = () => {
   return (
-    <View>
-      <Text>index</Text>
-    </View>
+    <SafeAreaView className="flex-1 items-center justify-center " edges={[""]}> 
+      <StatusBar barStyle="dark-content"/>
+      {/* Header */}
+      <Text className="text-2xl font-bold">index</Text>
+    </SafeAreaView>
   );
 };
 
