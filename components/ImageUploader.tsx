@@ -25,6 +25,7 @@ const ImageUploader = ({
   const {
     currentImage,
     currentHumanImage,
+    currentClothesImage,
     setCurrentImage,
     setCurrentHumanImage,
     setCurrentClothesImage,
@@ -106,6 +107,41 @@ const ImageUploader = ({
           ) : (
             <TouchableOpacity
               onPress={() => handlePickImage("human")}
+              disabled={isLoading}
+              className="border-2 border-dashed border-purple-300 rounded-2xl p-8 items-center justify-center bg-purple-50"
+            >
+              {isLoading ? (
+                <ActivityIndicator size="small" color="#7c3aed" />
+              ) : (
+                <Ionicons name="images" size={24} color="#7c3aed" />
+              )}
+            </TouchableOpacity>
+          )}
+        </View>
+        {/* Clothes image section */}
+        <View className="mb-4">
+          <Text className="text-lg font-semibold text-grey-700 mb-1">
+            Clothing Image
+          </Text>
+
+          {currentClothesImage ? (
+            <View className="relative">
+              <Image
+                source={{ uri: currentClothesImage }}
+                className="w-full h-48 rounded-2xl"
+                resizeMode="cover"
+              />
+              <TouchableOpacity
+                onPress={() => handlePickImage("clothes")}
+                className="absolute bottom-2 right-2 bg-white rounded-full p-2 shadow-lg"
+                disabled={isLoading}
+              >
+                <Ionicons name="images" size={24} color="#7c3aed" />
+              </TouchableOpacity>
+            </View>
+          ) : (
+            <TouchableOpacity
+              onPress={() => handlePickImage("clothes")}
               disabled={isLoading}
               className="border-2 border-dashed border-purple-300 rounded-2xl p-8 items-center justify-center bg-purple-50"
             >
